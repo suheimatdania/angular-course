@@ -1,0 +1,106 @@
+<!--<head>-->
+<!--  <meta charset="UTF-8"/>-->
+<!--  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">-->
+<!--  <meta content="width=device-width, initial-scale=1.0" name="viewport">-->
+<!--  <title>Thumbnail Grid with Expanding Preview</title>-->
+<!--  <meta content="Thumbnail Grid with Expanding Preview" name="description"/>-->
+<!--  <meta content="thumbnails, grid, preview, google image search, jquery, image grid, expanding, preview, portfolio"-->
+<!--        name="keywords"/>-->
+<!--  <meta content="Codrops" name="author"/>-->
+<!--  <link href="../../assets/images/profile.jpg" rel="shortcut icon">-->
+<!--  <link href="../../assets/css/default.css" rel="stylesheet" type="text/css"/>-->
+<!--  <link href="../../assets/css/component.css" rel="stylesheet" type="text/css"/>-->
+<!--  <script src="../../assets/js/modernizer.custom.js"></script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="container">-->
+<!--  &lt;!&ndash; Codrops top bar &ndash;&gt;-->
+<!--  <div class="codrops-top clearfix">-->
+<!--    <a href="http://tympanus.net/Tutorials/HexaFlip/"><strong>&laquo; Previous Demo: </strong>HexaFlip</a>-->
+<!--    <span class="right">-->
+<!--					<a href="http://cargocollective.com/jaimemartinez">Illustrations by Jaime Martinez</a>-->
+<!--					<a href="http://tympanus.net/codrops/?p=14530"><strong>Back to the Codrops Article</strong></a>-->
+<!--				</span>-->
+<!--  </div>&lt;!&ndash;/ Codrops top bar &ndash;&gt;-->
+<!--  <header class="clearfix">-->
+<!--    <h1>Thumbnail Grid <span>with Expanding Preview</span></h1>-->
+<!--  </header>-->
+<!--  <div class="main">-->
+<!--    <ul class="og-grid" id="og-grid">-->
+<!--      <li>-->
+<!--        <a data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot." data-largesrc="../../assets/images/btfly2 (1).png"-->
+<!--           data-title="Azuki bean"-->
+<!--           href="http://cargocollective.com/jaimemartinez/">-->
+<!--          <img alt="img01" src="../../assets/images/btfly2 (1).png"/>-->
+<!--        </a>-->
+<!--      </li>-->
+<!--      <li>-->
+<!--        <a data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu." data-largesrc="../../assets/images/btfly2 (1).png"-->
+<!--           data-title="Veggies sunt bona vobis"-->
+<!--           href="http://cargocollective.com/jaimemartinez/">-->
+<!--          <img alt="img02" src="../../assets/images/btfly2 (1).png"/>-->
+<!--        </a>-->
+<!--      </li>-->
+<!--      <li>-->
+<!--        <a data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot." data-largesrc="../../assets/images/btfly2 (1).png"-->
+<!--           data-title="Azuki bean"-->
+<!--           href="http://cargocollective.com/jaimemartinez/">-->
+<!--          <img alt="img01" src="../../assets/images/btfly2 (1).png"/>-->
+<!--        </a>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--    <p>Filler text by <a href="http://veggieipsum.com/">Veggie Ipsum</a></p>-->
+<!--    <a href="#" id="og-additems">add more</a>-->
+<!--  </div>-->
+<!--</div>&lt;!&ndash; /container &ndash;&gt;-->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+<!--<script src="../../assets/js/grid.js"></script>-->
+<!--<script>-->
+<!--  JQuery(document).ready(function ($) {-->
+<!--    $(function () {-->
+<!--      Grid.init();-->
+<!--    });-->
+<!--  })-->
+
+<!--</script>-->
+<!--</body>-->
+
+
+
+
+
+
+<div class="col-xs-12">
+  <!-- The grid: three columns -->
+  <div class="row">
+    <div class="column" (click)="openTab1('b1')" style="background:green;
+                                                        ">Box 1</div>
+    <div class="column" (click)="openTab1('b2')" style="background:blue;">Box 2</div>
+    <div class="column" (click)="openTab1('b3')" style="background:red;">Box 3</div>
+    <br>
+  </div>
+
+  <!-- The expanding grid (hidden by default) -->
+  <div id="b1" class="containerTab" style="display:none;
+                                     background:green">
+    <!-- If you want the ability to close the container, add a close button -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+    <h2>Box 1</h2>
+    <p>Lorem ipsum..</p>
+  </div>
+
+  <div id="b2" class="containerTab" style="display:none;background:blue">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+    <h2>Box 2</h2>
+    <p>Lorem ipsum..</p>
+  </div>
+
+  <div id="b3" class="containerTab" style="display:none;background:red">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+    <h2>Box 3</h2>
+    <p>Lorem ipsum..</p>
+  </div>
+</div>
+
+
+

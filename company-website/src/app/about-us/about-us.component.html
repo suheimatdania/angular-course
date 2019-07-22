@@ -1,0 +1,33 @@
+<div class="example-button-row">
+    <button mat-icon-button color="primary" aria-label="Team"
+            class="teamButton"
+            (mouseenter)="onMouseEnter('team')"
+            (mouseleave)="onMouseLeave()"
+            (click)="onChoosePage()"
+    >
+      <mat-icon class="icon">supervised_user_circle</mat-icon>
+    </button>
+
+    <button mat-icon-button color="accent" aria-label="Portfolio"
+            class="portfolioButton"
+            (mouseenter)="onMouseEnter('portfolio')"
+            (mouseleave)="onMouseLeave()"
+            (click)="onChoosePage()"
+    >
+      <mat-icon class="icon">file_copy</mat-icon>
+    </button>
+
+    <button mat-icon-button color="warn" aria-label="Third"
+            class="thirdButton"
+            (mouseenter)="onMouseEnter('third')"
+            (mouseleave)="onMouseLeave()"
+            (click)="onChoosePage()"
+    >
+      <mat-icon class="icon">mood</mat-icon>
+    </button>
+
+    <p *ngIf="currentlyOn === 'team'" class="textDisplay"><app-team-text></app-team-text></p>
+    <p *ngIf="currentlyOn === 'portfolio'" class="textDisplay"><app-portfolio-text></app-portfolio-text></p>
+    <p *ngIf="currentlyOn === 'third'" class="textDisplay">Third thing</p>
+  </div>
+

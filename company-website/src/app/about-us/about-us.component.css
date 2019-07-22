@@ -1,0 +1,55 @@
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+
+.teamButton {
+  position: absolute;
+  left: 42%;
+  top: 25%;
+}
+
+.teamButton:hover {
+  color: cornflowerblue;
+}
+
+
+.portfolioButton {
+  position: absolute;
+  left: 20%;
+  top: 60%;
+}
+
+.portfolioButton:hover {
+  color: hotpink;
+}
+
+.thirdButton {
+  position: absolute;
+  left: 64%;
+  top: 60%;
+}
+
+.thirdButton:hover {
+  color: red;
+}
+
+.textDisplay {
+  position: absolute;
+  text-align: center;
+  left: 45%;
+  top: 50%;
+}
+
+.icon {
+  font-size: 15em;
+}
+
+
+.image{
+  height:40em;
+  background-size:cover;
+  width:auto;
+  background-image: url('../../assets/images/btfly2 (1).png');
+  background-position:50% 50%;
+}
